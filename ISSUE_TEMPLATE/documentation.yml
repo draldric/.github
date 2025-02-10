@@ -1,0 +1,23 @@
+name: "📖 Documentation Improvement"
+description: Suggest improvements or report missing documentation.
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: "### 📖 Help us improve the documentation!"
+
+  - type: textarea
+    id: missing-info
+    attributes:
+      label: "What's missing or unclear?"
+      description: "Describe what needs to be improved."
+      placeholder: "The documentation doesn't explain..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-update
+    attributes:
+      label: "Suggested update"
+      description: "How should we improve it?"
+      placeholder: "It would be helpful to add..."

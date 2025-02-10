@@ -1,0 +1,16 @@
+name: "❓ Question"
+description: Ask a question about this project.
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: "### ❓ Have a question? Ask it here!"
+
+  - type: textarea
+    id: question
+    attributes:
+      label: "Your Question"
+      description: "Describe your question or request for clarification."
+      placeholder: "I want to know about..."
+    validations:
+      required: true

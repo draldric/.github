@@ -1,0 +1,51 @@
+name: "🐞 Bug Report"
+description: Report a bug or unexpected behavior.
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "### 🐞 Please fill out the details below to help us fix the issue."
+      
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "What happened?"
+      description: "Describe the issue, including steps to reproduce it."
+      placeholder: "I encountered a bug when..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Expected behavior"
+      description: "What did you expect to happen?"
+      placeholder: "I expected that..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Relevant logs or screenshots"
+      description: "Attach error messages or logs if applicable."
+      placeholder: "Paste logs or upload screenshots here."
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "Which platform are you using?"
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: "Version"
+      description: "What version of the software are you using?"
+      placeholder: "e.g., v1.2.3"
